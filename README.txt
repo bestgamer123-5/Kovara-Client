@@ -1,23 +1,37 @@
-# NightPro-Client
-Minecraft Python Launcher (v2)
+# Foobar
 
-NEW FEATURES:
-- Fabric support (checkbox)
-- Microsoft login support
-- Skin preview (only in online mode)
-- Local mods/ folder at: C:\Users\masym\Desktop\mc_launcher_gui\mods
+Foobar is a Python library for dealing with word pluralization.
 
-INSTALL DEPENDENCIES:
-    pip install minecraft-launcher-lib requests pillow
-TO UPDATE:
-(in cmd) cd C:\Users\masym\Desktop\mc_launcher_gui
-pyinstaller --onefile mc_launcher_gui.py
+## Installation
 
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
 
-TO USE:
-1. Drop mod .jar files in the `mods/` folder
-2. Launch with or without Microsoft login
-3. Fabric is optional per version
-DO NOT STEAL
+```bash
+pip install foobar
+```
 
--- Enjoy! --
+## Usage
+
+```python
+import foobar
+
+# returns 'words'
+foobar.pluralize('word')
+
+# returns 'geese'
+foobar.pluralize('goose')
+
+# returns 'phenomenon'
+foobar.singularize('phenomena')
+```
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first
+to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
